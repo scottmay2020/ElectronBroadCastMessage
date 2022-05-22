@@ -36,11 +36,8 @@ interface IContact {
 }
 
 const SkypeLogin = ({ handleSubmit }) => {
-  const [userName, setUserName] = React.useState<string>(
-    'smay10@protonmail.com'
-  );
-  const [password, setPassword] = React.useState<string>('Clyde0328!');
-  console.log('Here');
+  const [userName, setUserName] = React.useState<string>();
+  const [password, setPassword] = React.useState<string>();
   return (
     <>
       <Input
@@ -111,14 +108,10 @@ const BroadCast = () => {
       setIsLoading(false);
       setLogin({ userName: 'smay10@protonmail.com', password: 'Clyde0328!' });
     } catch (err) {
-      console.log(err, 'ERROR');
       setIsError(true);
       setIsLoading(false);
-      return false;
     }
   };
-  console.log(isLoading, 'SLUs');
-
   return (
     <div>
       {isError && (

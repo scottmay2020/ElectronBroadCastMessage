@@ -7,7 +7,6 @@ const SendMessage = ({
   selectedContacts,
   handleSendMessage,
  }) => {
-  console.log(selectedContacts, 'YOOO');
   const [message, setMessage] = React.useState<string>();
   const handleSubmit = () => {
     return handleSendMessage({
@@ -27,12 +26,14 @@ const SendMessage = ({
           maxRows: 6
         }}
       />
+      <br />
       <Button
         onClick={() => handleSubmit()}
         >
         Send Message to {(selectedContacts || []).length} User
         {((selectedContacts && selectedContacts) || []).length > 1 ? 's' : ''}
       </Button>
+      <br />
     </>
   );
 };
