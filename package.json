@@ -1,23 +1,37 @@
 {
-  "description": "A Broadcast Message App for Skype",
+  "description": "A foundation for scalable desktop apps",
   "keywords": [
-    "skype",
-    "broadcast",
-    "message"
+    "electron",
+    "boilerplate",
+    "react",
+    "typescript",
+    "ts",
+    "sass",
+    "webpack",
+    "hot",
+    "reload"
   ],
-  "homepage": "https://github.com/scottmay2020/ElectronBroadCastMessage#readme",
+  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
   "bugs": {
-    "url": "https://github.com/scottmay2020/ElectronBroadCastMessage/issues"
+    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scottmay2020/ElectronBroadCastMessage"
+    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Scott May",
-    "email": "smay10@pm.me"
+    "name": "Electron React Boilerplate Maintainers",
+    "email": "electronreactboilerplate@gmail.com",
+    "url": "https://electron-react-boilerplate.js.org"
   },
+  "contributors": [
+    {
+      "name": "Amila Welihinda",
+      "email": "amilajack@gmail.com",
+      "url": "https://github.com/amilajack"
+    }
+  ],
   "proxy": "https://d6d4-184-91-96-250.ngrok.io/api/",
   "main": "./src/main/main.ts",
   "scripts": {
@@ -173,7 +187,7 @@
   },
   "build": {
     "productName": "BroadcastMessage",
-    "appId": "org.erb.BroadcastMessage",
+    "appId": "org.erb.ElectronReact",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -230,10 +244,13 @@
       "./assets/**"
     ],
     "publish": {
-      "provider": "scottmay",
-      "owner": "scottmay",
-      "repo": "ElectronBroadCastMessage"
+      "provider": "github",
+      "owner": "electron-react-boilerplate",
+      "repo": "electron-react-boilerplate"
     }
+  },
+  "collective": {
+    "url": "https://opencollective.com/electron-react-boilerplate-594"
   },
   "devEngines": {
     "node": ">=14.x",

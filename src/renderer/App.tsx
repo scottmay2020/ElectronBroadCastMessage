@@ -42,13 +42,13 @@ const SkypeLogin = ({ handleSubmit }) => {
     <>
       <Input
         value={userName}
-        placeholder="Please enter Skype username"
+        placeholder="Enter Skype username"
         onChange={({ target: { value } }) => setUserName(value)}
       />
       <br />
       <Password
         value={password}
-        placeholder="Please enter Skype password"
+        placeholder="Enter Skype password"
         onChange={({ target: { value } }) => setPassword(value)}
       />
       <br />
