@@ -54,7 +54,9 @@ const ContactDisplay = ({
       {!isSending && (!!(contactsWithChat || []).length) && (
         <div>Please select user(s) to broadcast message</div>
       )}
-      {contactsWithChat.map((contact) => {
+      {contactsWithChat
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((contact) => {
         if (!(contact && contact.chat)) return null;
         return (
           <div key={contact && contact.id}>
